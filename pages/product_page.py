@@ -12,18 +12,6 @@ class ProductPage(BasePage):
         btn.click()
         self.solve_quiz_and_get_code()
 
-
-    # def add_product_to_basket(self):
-    #     self.should_be_name()
-    #     self.should_be_price()
-    #     self.should_be_decription()
-    #     self.should_be_add_button()
-    #     self.should_be_success_message()
-    #     self.should_not_be_success_message()
-    #     self.should_not_be_success_message()
-    #
-    #  self.is_disappeared()
-
     def should_be_name(self):
         assert self.is_element_present(*ProductPageLocators.PRODUCT_NAME), "Name of product not found"
         self.product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text

@@ -6,6 +6,7 @@ class BasePageLocators:
     BASKET_BUTTON = (By.CSS_SELECTOR, "span[class='btn-group'] a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+
 class BasketPageLocators:
     BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
     MESSAGE_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
@@ -31,9 +32,3 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main p.price_color")
     PRODUCT_DESCRIPTION = (By.CSS_SELECTOR, "#product_description+p")
     SUCCESS_MESSAGES = (By.CSS_SELECTOR, ".alertinner strong")
-
-
-
-
-
-
